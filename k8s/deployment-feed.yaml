@@ -12,12 +12,11 @@ spec:
     template:
         metadata:
             labels:
-                service: backend-feed
                 app: backend-feed
         spec:
             containers:
                 - name: api-feed
-                  image: chuongnq1203/api-feed
+                  image: chuongnq1203/udagram-api-feed:v1
                   imagePullPolicy: Always
                   resources:
                       requests:

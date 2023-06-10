@@ -12,11 +12,10 @@ spec:
     template:
         metadata:
             labels:
-                service: backend-user
                 app: backend-user
         spec:
             containers:
-                - image: chuongnq1203/api-user
+                - image: chuongnq1203/udagram-api-user:v1
                   name: api-user
                   imagePullPolicy: Always
                   resources:

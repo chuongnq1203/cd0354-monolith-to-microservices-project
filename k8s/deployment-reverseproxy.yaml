@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
     labels:
-        service: reverseproxy
+        app: reverseproxy
     name: reverseproxy
 spec:
     replicas: 2
@@ -12,11 +12,10 @@ spec:
     template:
         metadata:
             labels:
-                service: reverseproxy
                 app: reverseproxy
         spec:
             containers:
-                - image: chuongnq1203/reverseproxy
+                - image: chuongnq1203/reverseproxy:v1
                   name: reverseproxy
                   imagePullPolicy: Always
                   resources:
