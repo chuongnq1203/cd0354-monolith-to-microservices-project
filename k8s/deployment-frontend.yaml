@@ -16,7 +16,7 @@ spec:
                 app: frontend
         spec:
             containers:
-                - image: chuongnq1203/udagram-frontend:v1
+                - image: chuongnq1203/udagram-frontend:v2
                   name: frontend
                   imagePullPolicy: Always
                   ports:
